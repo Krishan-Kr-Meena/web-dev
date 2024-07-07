@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="shortcut icon" href="images/forms.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">College Survey Form</h1>
+    <form id="survey-form">
+        <h2 id="title1">Instructions: </h2>
+        <p id="description">Please be honest in your responses. Your feedback is confidential and will be used to improve the college eperience.</p>
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name" id="name-label">Enter Your First Name: <input type="text" name="first-name" id="name" placeholder="Enter Your First Name" required></label>
+        <label for="last-name">Enter Your Last Name: <input type="text" name="last-name" id="last-name" placeholder="Enter Your Last Name"></label>
+        <label for="email" id="email-label">Enter Your Email ID: <input type="email" name="email" id="email" placeholder="Enter Your Email ID" required></label>
+        <label for="number" id="number-label">Enter Your Age: <input type="number" name="number" id="number" min="13" max="60" value="18" placeholder="Enter Your Age"></label>
+        <label for="gender">Gender: </label>
+        <label for="male"><input type="radio" name="gender" id="male" value="male" >Male</label>
+        <label for="female"><input type="radio" name="gender" id="female" value="female">Female</label>
+        <label for="student-id">Enter Your Student ID/Roll No. : <input type="text" name="student-id" id="student-id" placeholder="Enter Your Student ID" required></label>
+        <label for="year-of-study">Enter Your Year of Study: </label>
+            <label for="freshman"><input type="radio" name="year-of-study" id="freshman" value="freshman required">Freshman(1st year)</label>
+            <label for="sophomore"><input type="radio" name="year-of-study" id="sophomore" value="sophomore">Sophomore(2nd year)</label>
+            <label for="junior"><input type="radio" name="year-of-study" id="junior"value="junior" >Junior(3rd year)</label>
+            <label for="senior"><input type="radio" name="year-of-study" id="senior" value="senior">Senior(4th year)</label>
+            <label for="graduate"><input type="radio" name="year-of-study" id="graduate" value="graduate">Graduate(complete)</label>
+        <label for="college-name">Enter Your College/Institute Name: <input type="text" name="college-name" id="college-name" placeholder="Enter Your College Name" required></label>
+        <label for="department-name">Enter Your Department Name: <input type="text" name="department-name" id="department-name" placeholder="Enter Your Department Name"></label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Academic Experience</legend>
+<!--Rate the quality of the curriculum:-->
+        <label for="quality">Rate the quality of the curriculum: </label>
+        <label for="curriculum-poor"><input type="radio" name="quality" id="curriculum-poor" value="curriculum-poor">Poor</label>
+        <label for="curriculum-fair"><input type="radio" name="quality" id="curriculum-fair" value="curriculum-fair">Fair</label>
+        <label for="curriculum-good"><input type="radio" name="quality" id="curriculum-good" value="curriculum-good">Good</label>
+        <label for="curriculum-very-good"><input type="radio" name="quality" id="curriculum-very-good" value="curriculum-very-good">Very Good</label>
+        <label for="curriculum-excellent"><input type="radio" name="quality" id="curriculum-excellent" value="curriculum-excellent">Excellent</label>
+
+<!--Rate the quality of teaching by prfessors:-->
+        <label for="teaching-quality">Rate the quality of teaching by Professors/Teachers: </label>
+        <label for="poor-teaching"><input type="radio" name="teaching-quality" id="poor-teaching" value="poor-teaching">Poor</label>
+        <label for="fair-teaching"><input type="radio" name="teaching-quality" id="fair-teaching" value="fair-teaching">Fair</label>
+        <label for="good-teaching"><input type="radio" name="teaching-quality" id="good-teaching" value="good-teaching">Good</label>
+        <label for="very-good-teaching"><input type="radio" name="teaching-quality" id="very-good-teaching" value="very-good-teaching">Very Good</label>
+        <label for="excellent-teaching"><input type="radio" name="teaching-quality" id="excellent-teaching" value="excellent-teaching">Excellent</label>
+
+<!--How accessible are the professors/teacher outside of class?-->
+        <label for="accessiblity">How accessible are the professors/teacher outside of class? </label>
+        <label for="professor-not-at-all"><input type="radio" name="accessiblity" id="professor-not-at-all" value="professor-not-at-all">Not at all</label>
+        <label for="professor-somewhat-accessible"><input type="radio" name="accessiblity" id="professor-somewhat-accessible" value="professor-somewhat-accessible">Somewhat Accessible</label>
+        <label for="professor-accessible"><input type="radio" name="accessiblity" id="professor-accessible" value="professor-accessible">Accessible</label>
+        <label for="professor-very-accessible"><input type="radio" name="accessiblity" id="professor-very-accessible" value="professor-very-accessible">Very Accessible</label>
+
+<!--Rate the academic advising services: -->
+        <label for="academic-advising">Rate the academic advising services:  </label>
+        <label for="academic-poor"><input type="radio" name="academic-advising" id="academic-poor" value="academic-poor">Poor</label>
+        <label for="academic-fair"><input type="radio" name="academic-advising" id="academic-fair" value="academic-fair">Fair</label>
+        <label for="academic-good"><input type="radio" name="academic-advising" id="academic-good" value="academic-good">Good</label>
+        <label for="academic-very-good"><input type="radio" name="academic-advising" id="academic-very-good" value="academic-very-good">Very Good</label>
+        <label for="academic-excellent"><input type="radio" name="academic-advising" id="academic-excellent" value="academic-excellent">Excellent</label>
+
+<!--How satisfied are your with the availability of courses you need?-->
+        <label for="satisfiability">How satisfied are your with the availability of courses you need? </label>
+        <label for="course-not-satisfied"><input type="radio" name="satisfiability" id="course-not-satisfied" value="not-satisfied">Not satisfied</label>
+        <label for="course-somewhat-satisfied"><input type="radio" name="satisfiability" id="course-somewhat-satisfied" value="somewhat-satisfied">Somewhat satisfied</label>
+        <label for="course-satisfied"><input type="radio" name="satisfiability" id="course-satisfied" value="satisfied">Satisfied</label>
+        <label for="course-very-satisfied"><input type="radio" name="satisfiability" id="course-very-satisfied" value="very-satisfied">Very satisfied</label>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Campus Facilities</legend>
+<!--Rate the conditions and availability of classrooms and labs: -->
+        <label for="availability">Rate the conditon and availability of classrooms and labs: </label>
+        <label for="condition-poor"><input type="radio" name="availability" id="condition-poor" value="poor">Poor</label>
+        <label for="conditon-fair"><input type="radio" name="availability" id="conditon-fair" value="fair">Fair</label>
+        <label for="condition-good"><input type="radio" name="availability" id="condition-good" value="good">Good</label>
+        <label for="condition-verygood"><input type="radio" name="availability" id="condition-verygood" value="very good">Very Good</label>
+        <label for="condition-excellent"><input type="radio" name="availability" id="condition-excellent" value="excellent">Excellent</label>
+
+<!--Rate the Quality of library resources: -->
+        <label for="library-quality">Rate the Quality of library resources: </label>
+        <label for="poor-library-quality"><input type="radio" name="library-quality" id="poor-library-quality" value="poor">Poor</label>
+        <label for="fair-library-quality"><input type="radio" name="library-quality" id="fair-library-quality" value="fair">Fair</label>
+        <label for="good-library-quality"><input type="radio" name="library-quality" id="good-library-quality" value="good">Good</label>
+        <label for="verygood-library-quality"><input type="radio" name="library-quality" id="verygood-library-quality" value="very good">Very Good</label>
+        <label for="excellent-library-quality"><input type="radio" name="library-quality" id="excellent-library-quality" value="excellent">Excellent</label>
+
+<!--How satisfied are you with the availability and quality of computer labs: -->
+        <label for="computer-labs">How satisfied are you with the availability and quality of computer labs: </label>
+        <label for="computer-not-satified"><input type="radio" name="computer-labs" id="computer-not-satified" value="computer-not-satified">Not satisfied</label>
+        <label for="computer-somewhat-satified"><input type="radio" name="computer-labs" id="computer-somewhat-satified" value="computer-somewhat-satified">somewhat-satisfied</label>
+        <label for="computer-satified"><input type="radio" name="computer-labs" id="computer-satified" value="computer-satified">Satisfied</label>
+        <label for="computer-very-satified"><input type="radio" name="computer-labs" id="computer-very-satified" value="computer-very-satified">Very Satisfied</label>
+        
+<!--Rate the cleanliness and maintenance of the campus: -->
+        <label for="cleanliness-condition">Rate the cleanliness and maintenance of the campus: </label>
+        <label for="poor-cleanliness"><input type="radio" name="cleanliness-condition" id="poor-cleanliness" value="poor">Poor</label>
+        <label for="fair-cleanliness"><input type="radio" name="cleanliness-condition" id="fair-cleanliness" value="fair">Fair</label>
+        <label for="good-cleanliness"><input type="radio" name="cleanliness-condition" id="good-cleanliness" value="good">Good</label>
+        <label for="Verygood-cleanliness"><input type="radio" name="cleanliness-condition" id="Verygood-cleanliness" value="very-good">Very Good</label>
+        <label for="excellent"><input type="radio" name="cleanliness-condition" id="excellent" value="excellent">Excellent</label>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Extracurricular Activities</legend>
+
+<!--Are your sati with the variety of student organizations and clubs? -->
+        <label for="student-organization">Are your satisfied with the variety of student organizations and clubs? </label>
+        <label for="clubs-not-satisfied"><input type="radio" name="student-organization" id="clubs-not-satisfied" value="not-satisfied">Not Satisfied</label>
+        <label for="clubs-somewhat-satisfied"><input type="radio" name="student-organization" id="clubs-somewhat-satisfied" value="somewhat-satisfied">Somewhat Satisfied</label>
+        <label for="clubs-satisfied"><input type="radio" name="student-organization" id="clubs-satisfied" value="satisfied">Satisfied</label>
+        <label for="clubs-very-satisfied"><input type="radio" name="student-organization" id="clubs-very-satisfied" value="very-satisfied">Very Satisfied</label>
+
+<!--Rate the quality of sports and recreation Facilities:-->
+        <label for="sports-quality">Rate the quality of sports and recreation Facilities: </label>
+        <label for="sports-quality-poor"><input type="radio" name="sports-quality" id="sports-quality-poor" value="poor">Poor</label>
+        <label for="sports-quality-fair"><input type="radio" name="sports-quality" id="sports-quality-fair" value="fair">Fair</label>
+        <label for="sports-quality-good"><input type="radio" name="sports-quality" id="sports-quality-good" value="good">Good</label>
+        <label for="sports-quality-verygood"><input type="radio" name="sports-quality" id="sports-quality-verygood" value="very-good">Very Good</label>
+        <label for="sports-quality-excellent"><input type="radio" name="sports-quality" id="sports-quality-excellent" value="excellent">Excellent</label>
+       
+<!--How often do you participate in extracurricular activities? -->
+        <label for="participate-in-activities">How often do you participate in extracurricular activities? </label>
+        <label for="participate-in-activities-never"><input type="radio" name="participate-in-activities" id="participate-in-activities-never" value="never">Never</label>
+        <label for="participate-in-activities-rarely"> <input type="radio" name="participate-in-activities" id="participate-in-activities-rarely" value="rarely">Rarely</label>
+        <label for="participate-in-activities-occasionally"><input type="radio" name="participate-in-activities" id="participate-in-activities-occasionally" value="occasionally">Occasionally</label>
+        <label for="participate-in-activities-frequently"> <input type="radio" name="participate-in-activities" id="participate-in-activities-frequently" value="frequently">Frequently</label>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Campus Services</legend>
+
+        <!--Rate the quality of campus dining services: -->
+        <label for="campus-dining">Rate the quality of campus dining services: </label>
+        <label for="poor-campus-dining"><input type="radio" name="campus-dining" id="poor-campus-dining" value="poor">Poor</label>
+        <label for="fair-campus-dining"><input type="radio" name="campus-dining" id="fair-campus-dining" value="fair">Fair</label>
+        <label for="good-campus-dining"><input type="radio" name="campus-dining" id="good-campus-dining" value="good">Good</label>
+        <label for="verygood-campus-dining"><input type="radio" name="campus-dining" id="verygood-campus-dining" value="very-good">Very Good</label>
+        <label for="excellent-campus-dining"><input type="radio" name="campus-dining" id="excellent-campus-dining" value="excellent">Excellent
+        </label>
+
+        <!--Rate the quality of health and wellness services: -->
+        <label for="health-quality">Rate the quality of health and wellness services: </label>
+        <label for="poor-health-quality"><input type="radio" name="health-quality" id="poor-health-quality" value="poor">Poor</label>
+        <label for="fair-health-quality"><input type="radio" name="health-quality" id="fair-health-quality" value="fair">Fair</label>
+        <label for="good-health-quality"><input type="radio" name="health-quality" id="good-health-quality" value="good">Good</label>
+        <label for="verygood-health-quality"><input type="radio" name="health-quality" id="verygood-health-quality" value="very-good">Very Good</label>
+        <label for="excellent-health-quality"><input type="radio" name="health-quality" id="excellent-health-quality" value="excellent">Excellent</label>
+        
+        <!--How satisfied are youwith the campus security? -->
+        <label for="campus-security">How satisfied are youwith the campus security? </label>
+        <label for="campus-security-not-satisfied"><input type="radio" name="campus-security" id="campus-security-not-satisfied" value="not-satisfied">Not Satisfied</label>
+        <label for="campus-security-somewhat-satisfied"><input type="radio" name="campus-security" id="campus-security-somewhat-satisfied" value="somewhat-satisfied">Somewhat Satisfied</label>
+        <label for="campus-security-satisfied"><input type="radio" name="campus-security" id="campus-security-satisfied" value="satisfied">Satisfied</label>
+        <label for="campus-security-very-satisfied"><input type="radio" name="campus-security" id="campus-security-very-satisfied" value="satisfied">Very Satisfied</label>
+        
+        <!--Rate the effectiveness of career services: -->
+        <label for="effectiveness">Rate the effectiveness of career services: </label>
+        <label for="effectiveness-poor"><input type="radio" name="effectiveness" id="effectiveness-poor" value="poor">Poor</label>
+        <label for="effectiveness-fair"><input type="radio" name="effectiveness" id="effectiveness-fair" value="fair">Fair</label>
+        <label for="effectiveness-good"><input type="radio" name="effectiveness" id="effectiveness-good" value="good">Good</label>
+        <label for="effectiveness-verygood"><input type="radio" name="effectiveness" id="effectiveness-verygood" value="very-good">Very Good</label>
+        <label for="effectiveness-excellent"><input type="radio" name="effectiveness" id="effectiveness-excellent" value="excellent">Excellent</label>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Overall Satisfaction</legend>
+        
+        <!--Overall, how satisfied are you with your college experience?-->
+        <label for="college-experience">Overall, how satisfied are you with your college experience? </label>
+        <select name="college-experience" id="dropdown">
+            <option value="select">Select(one)</option>
+            <option value="not-satisfied">Not Satisfied</option>
+            <option value="somewhat-satisfied">Somewhat Satisfied</option>
+            <option value="satisfied">Satisfied</option>
+            <option value="very-satisfied">Very Satisfied</option>
+        </select>
+        
+        <!--Would you recommend this college to others?-->
+        <label for="recommend">Would you recommend this college to others? </label>
+        <select name="recommend" id="dropdown1">
+            <option value="select"> Select(one) </option>
+            <option value="definitely-not">Definitely Not</option>
+            <option value="probably-not">Probably Not</option>
+            <option value="maybe">Maybe</option>
+            <option value="probably">Probably</option>
+            <option value="definitely">Definitely</option>
+        </select>
+    
+    </fieldset>
+
+    <fieldset>
+        <legend>Open-Ended Questions </legend>
+        
+        <!--What do you like most about your college/Institute?-->
+        <label for="most-like">What do you like most about your college/Institute? </label>
+        <label for="college-most-like"><textarea name="most-like" id="college-most-like" rows="4" cols="45" placeholder="what do you like most about your college..." required></textarea></label>
+        
+        <!--What areas do you think need improvement?-->
+        <label for="improvement">What areas do you think need improvement? </label>
+        <label for="any-improvement"><textarea name="improvement" id="any-improvement" rows="4" cols="45" placeholder="Do you think any improvement in specific areas..." required></textarea></label>
+        
+        <!--Any additional Comments or suggestions?-->
+        <label for="comments">Any additional Comments or suggestions? </label>
+        <label for="any-comments"><textarea name="comments" id="any-comments" rows="4" cols="45" placeholder="Add any comments and suggestions..." required></textarea></label>
+
+    </fieldset>
+
+
+    <p>Thank you for your participation!</p>
+    <label for="terms"><input type="checkbox" name="terms" id="terms" value="terms" required>This form can be adapted based on specific needs and goals of the survey.</label>
+    <label for="terms-and-cnditions"><input type="checkbox" name="terms-and-cnditions" id="terms-and-cnditions" value="terms-and-cnditions" required>You have the right to request access to your data, correct any inaccuracies, or request deletion of your data by contacting the survey administrator.</label>
+    <label for="terms-and-cnditions"><input type="checkbox" name="terms-and-cnditions" id="terms-and-cnditions" value="terms-and-cnditions" required>By submitting this form, you consent to the collection and use of your data as described in these terms and conditions.</label>
+    
+
+
+    <input type="submit" id="submit" value="Submit Form"/>
+    </form>
+</body>
+</html>
