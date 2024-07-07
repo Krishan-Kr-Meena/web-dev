@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+body{
+    background-color: #7eabdc;
+    text-align: center;
+}
+
+h1{
+    height: 20px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: -20px;
+
+}
+
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game{
+    margin-top: 150px;
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+    
+}
+
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: #c9ddec;
+    box-shadow: inset 5px 5px 12px #ffffff,
+                      5px 5px 12px rgba(0,0,0,0.2);
+    font-size: 8vmin;
+    color: #b0413e;
+}
+
+#reset-game{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #1c8e90;
+    color: #ffffff;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.5);
+    margin-top: 65px;
+    
+}
+
+#new-game {
+    margin: 1rem;
+    margin-top: 50px;
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #1c8e90;
+    color: #ffffff;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.5);
+    display: none; /* Initially hide the new game button */
+}
+
+#message{
+    font-size: 8vmin;
+    color: #1c8e90;
+}
+
+
+.message-continer{
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.hide{
+    display: none;
+}
+
+.o-color {
+    color: rgb(22, 22, 223);
+}
+
+.x-color {
+    color: rgb(22, 22, 223);
+}
+
+
+.message-container.show {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+
+
